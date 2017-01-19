@@ -36,7 +36,6 @@ melt_data <- melt(tidy_data, id = c("subjectid","activity"),
                   measure.vars = 3:length(names(tidy_data)) )
 summary_data <- dcast(melt_data, subjectid + activity ~ variable, mean)
 ```
-
 7. Output the clean data set into folder using `write.table` function.
     
 ### The CodeBook.md
